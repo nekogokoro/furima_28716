@@ -47,46 +47,37 @@ Things you may want to cover:
 
 | Column | Type   | Options     |
 | ------ | ------ | ----------- |
-| name   | string | null: false |
-| user   | string | null: false |
-| price  | string | null: false |
 | images  | string | null: false |
+| title   | string | null: false |
 | text  | string | null: false |
-| category | string | null: false |
-| item_status| string | null: false|
-|delivery free  | string | null: false |
-| shipping_region | string | null: false |
-| days_until_shipping| string | null: false|
-
+| price  | string | null: false |
 
 
 
 
 ### Association
 
-- belongs_to :users　
+- belongs_to :user　
 - has_one    :purchases　
 
 ## purchases テーブル
 
 | Column | Type       | Options                        |　
 | ------ | ---------- | ------------------------------ |　
-| user   | references | null: false, foreign_key: true |　
-| item   | references | null: false, foreign_key: true |　
-| price  | string     | null: false, foreign_key: true |　
+| user_id  | references | null: false, foreign_key: true |　
+| item_id  | references | null: false, foreign_key: true |　　
 
 ### Association　
 
-- has_many :users　
 - belongs_to :item　
 - belongs_to  :shipping_address　
-## shipping_address テーブル　
+
+### shipping_address テーブル　
 
 | Column  | Type       | Options                        |　
 | ------- | ---------- | ------------------------------ |
-| user    | references | null: false, foreign_key: true |　
-| item    | references | null: false, foreign_key: true |　
-|  | references |  |
+| user_id    | references | null: false, foreign_key: true |　
+
 
 ### Association　
 
