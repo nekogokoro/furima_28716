@@ -60,34 +60,36 @@ Things you may want to cover:
 
 
 
+
+
 ### Association
 
-- belongs_to :users
-- has_one    :purchases
+- belongs_to :users　
+- has_one    :purchases　
 
 ## purchases テーブル
 
-| Column | Type       | Options                        |
-| ------ | ---------- | ------------------------------ |
-| user   | references | null: false, foreign_key: true |
-| item   | references | null: false, foreign_key: true |
-| price  | string     | null: false, foreign_key: true |
+| Column | Type       | Options                        |　
+| ------ | ---------- | ------------------------------ |　
+| user   | references | null: false, foreign_key: true |　
+| item   | references | null: false, foreign_key: true |　
+| price  | string     | null: false, foreign_key: true |　
 
-### Association
+### Association　
 
-- has_many :users
-- belongs_to :item
-- belongs_to  :shipping_address
-## shipping_address テーブル
+- has_many :users　
+- belongs_to :item　
+- belongs_to  :shipping_address　
+## shipping_address テーブル　
 
-| Column  | Type       | Options                        |
+| Column  | Type       | Options                        |　
 | ------- | ---------- | ------------------------------ |
-| user    | references | null: false, foreign_key: true |
-| item    | references | null: false, foreign_key: true |
+| user    | references | null: false, foreign_key: true |　
+| item    | references | null: false, foreign_key: true |　
 |  | references |  |
 
-### Association
+### Association　
 
 belongs_to :purchase
-belomgs_to :user
+belongs_to :user 　
 
