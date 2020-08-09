@@ -64,7 +64,6 @@ Things you may want to cover:
 ### Association
 
 - belongs_to :user
-- has_one    :shipping_addresses
 - has_one    :purchase
 
 ## purchases テーブル
@@ -78,13 +77,14 @@ Things you may want to cover:
 
 - belongs_to :item
 - belongs_to :user
+- has_one    :shipping_address
 
 
 ### shipping_addresses テーブル
 
 | Column             | Type        | Options                       |
 | -------            | ----------  | ----------------------------- | 
-|  item              |  references | null: false, foreign_key: true|
+|  purchases         |  references | null: false, foreign_key: true|
 |  postal_code       |   string    | null: false,                  |
 |  prefecture(active_hash)         | integer| null: false,         |
 |  city              |   string    | null: false,                  |
@@ -93,7 +93,7 @@ Things you may want to cover:
 |  tel               |   string    | null.  false,                 |
 ### Association
 
-belongs_to :item
+belongs_to :purchase
 
 
 
