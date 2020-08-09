@@ -57,32 +57,32 @@ Things you may want to cover:
 | status (active_hash)             | integer | null: false          |
 | shipping_charges (active_hash)   | integer   null: false          |
 | shipping_region (active_hash)    | integer | null: false          |
-| day_until_shipping(active_hash)  | integer | null: false          |　
+| day_until_shipping(active_hash)  | integer | null: false          |
 
 
 
 ### Association
 
-- belongs_to :user　
+- belongs_to :user
 - has_one    :shipping_addresses
 - has_one    :purchase
 
 ## purchases テーブル
 
-| Column | Type       | Options                        |　
-| ------ | ---------- | ------------------------------ |　
+| Column | Type       | Options                        |
+| ------ | ---------- | ------------------------------ |
 | user_id| references | null: false, foreign_key: true |
-| item_id| references | null: false, foreign_key: true |　　
+| item_id| references | null: false, foreign_key: true |
 
-### Association　
+### Association
 
-- belongs_to :item　
-- belongs_to :user　
+- belongs_to :item
+- belongs_to :user
 
 
-### shipping_addresses テーブル　
+### shipping_addresses テーブル
 
-| Column             | Type        | Options                       |　
+| Column             | Type        | Options                       |
 | -------            | ----------  | ----------------------------- | 
 |  item              |  references | null: false, foreign_key: true|
 |  postal_code       |   string    | null: false,                  |
@@ -91,7 +91,7 @@ Things you may want to cover:
 |  house_number      |   string    | null: false,                  |
 |  building_name     |   string    |                               |
 |  tel               |   string    | null.  false,                 |
-### Association　
+### Association
 
 belongs_to :item
 
