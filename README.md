@@ -93,7 +93,7 @@ Things you may want to cover:
 |  tel               |   string    | null.  false,                 |
 ### Association　
 
-belongs_to :items
+belongs_to :item
 
 
 
