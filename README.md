@@ -41,29 +41,31 @@ Things you may want to cover:
 
  - has_many :items
  - has_many :purchases
+ - has_many :shipping_addresses
 
 
 ## items テーブル
 
 | Column              | Type       | Options                        |
 | ------              | ------     | -----------                    |
-| images              | image/jpg  | null: false                    |
-| title               | text       | null: false                    |
+| images              | image      | null: false                    |
+| title               | string     | null: false                    |
 | text                | text       | null: false                    |
 | price               | integer    | null: false                    |
-| user_id             | references | null: false, foreign_key: true |
-| category(active_hash)            | category_id                  | null: false                    |
-| status (active_hash)             | status_id                    | null: false                    |
-| shipping_charges (active_hash)   | shipping_charges_id          | null: false                    |
-| shipping_region (active_hash)    | shipping_region_id           | null: false                    |
-| day_until_shipping(active_hash)  | day_until_shipping_id        | null: false                    |　
+| user                | references | null: false, foreign_key: true |
+| category(active_hash)            |  integer| null: false          |
+| status (active_hash)             | integer | null: false          |
+| shipping_charges (active_hash)   | integer   null: false          |
+| shipping_region (active_hash)    | integer | null: false          |
+| day_until_shipping(active_hash)  | integer | null: false          |　
 
 
 
 ### Association
 
 - belongs_to :user　
-- has_one    :purchase　
+- has_one    :shipping_addresses
+- has_one    :purchases
 
 ## purchases テーブル
 
@@ -75,7 +77,6 @@ Things you may want to cover:
 ### Association　
 
 - belongs_to :item　
-- has_one    :shipping_address
 - belongs_to :user　
 
 
@@ -83,17 +84,20 @@ Things you may want to cover:
 
 | Column             | Type        | Options                       |　
 | -------            | ----------  | ----------------------------- | 
-|  user_id           |  references | null: false, foreign_key: true|
-|  purchases_id      |  references | null: false, foreign_key: true|
-|  postal_code       |   integer   | null: false,                  |
-|  prefecture(active_hash)         | purchases_id                  | null: false,             |
-|  city              |   text      | null: false,                  |
-|  house_number      |   text      | null: false,                  |
-|  building_name     |   text      |                               |
-|  tel               |   integer   | null.  false,                 |
+|  user              |  references | null: false, foreign_key: true|
+|  item              |  references | null: false, foreign_key: true|
+|  postal_code       |   string    | null: false,                  |
+|  prefecture(active_hash)         | integer| null: false,         |
+|  city              |   string    | null: false,                  |
+|  house_number      |   string    | null: false,                  |
+|  building_name     |   string    |                               |
+|  tel               |   string    | null.  false,                 |
 ### Association　
 
-belongs_to :purchase
+belongs_to :items
+belongs_to :users
+
+
 
 
 
