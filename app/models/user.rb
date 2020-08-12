@@ -14,9 +14,9 @@ class User < ApplicationRecord
   VALID_NAME = /\A[ぁ-んァ-ン一-龥]/
   VALID_KANA_NAME = /\A[ァ-ヶー－]+\z/
 
-  with_options presence: true do |s| 
+  
 
-    validates :password,      length: {minimum: 6}, format: { with: VALID_PASSWORD }, confirmation: true
+    validates :password,      format: { with: VALID_PASSWORD }, confirmation: true
     salidates :email,         format: { with: VALID_EMAIL_REGEX }, uniqueness: { case_sensitive: false }
     validates :nick_name,      uniqueness: { case_sensitive: false }
     validates :first_name,     format: { with: VALID_NAME }

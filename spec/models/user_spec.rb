@@ -1,12 +1,13 @@
 require 'rails_helper'
 describe User do
+  before do
+    @user = FactoryBot.build(:user)
+  end
   
   
   describe '#create' do
 
-    before :context do
-      @user = FactoryBot.build(:user)
-      
+    
     it 'is invalid without a nick_name' do
       @user.nick_name = ''
       @user.valid?
