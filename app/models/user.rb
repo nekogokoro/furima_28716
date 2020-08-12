@@ -18,7 +18,7 @@ class User < ApplicationRecord
 
     validates :password,      format: { with: VALID_PASSWORD }, confirmation: true
     salidates :email,         format: { with: VALID_EMAIL_REGEX }, uniqueness: { case_sensitive: false }
-    validates :nick_name,      uniqueness: { case_sensitive: false }
+    validates :nick_name, uniqueness: { case_sensitive: true }
     validates :first_name,     format: { with: VALID_NAME }
     validates :last_name,      format: { with: VALID_NAME }
     validates :first_name_kana,    format: { with: VALID_KANA_NAME }
