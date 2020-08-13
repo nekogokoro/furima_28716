@@ -5,7 +5,7 @@
   </header>
   <div class="items-sell-main">
     <h2 class="items-sell-title">商品の情報を入力</h2>
-     <%= form_with model:@item, url:items_path, local: true do |f| %>
+     <%= form_with model:@article, url:items_path, local: true do |f| %>
      <%= render 'shared/error_messages', model: f.object %>
      
 
@@ -24,7 +24,7 @@
         <p>
           クリックしてファイルをアップロード
         </p> 
-         <%=f.file_field :image, id:"item-image" %>
+         <%=f.file_field :image, id:"article-image" %>
       </div>
     </div>
     <%# /出品画像 %>
@@ -34,31 +34,31 @@
         商品名
         <span class="indispensable">必須</span>
       </div>
-      <%= f.text_area :title, class:"items-text", id:"item-name", placeholder:"商品名（必須 40文字まで)", maxlength:"40" %>
+      <%= f.text_area :title, class:"artcles-text", id:"article-name", placeholder:"商品名（必須 40文字まで)", maxlength:"40" %>
       <div class="items-explain">
         <div class="weight-bold-text">
           商品の説明
           <span class="indispensable">必須</span>
         </div>
-        <%= f.text_area :text, class:"items-text", id:"item-info", placeholder:"商品の説明（必須 1,000文字まで）（色、素材、重さ、定価、注意点など）例）2010年頃に1万円で購入したジャケットです。ライトグレーで傷はありません。あわせやすいのでおすすめです。" ,rows:"7" ,maxlength:"1000" %>
+        <%= f.text_area :text, class:"artcles-text", id:"article-info", placeholder:"商品の説明（必須 1,000文字まで）（色、素材、重さ、定価、注意点など）例）2010年頃に1万円で購入したジャケットです。ライトグレーで傷はありません。あわせやすいのでおすすめです。" ,rows:"7" ,maxlength:"1000" %>
       </div>
     </div>
     <%# /商品名と商品説明 %>
 
     <%# 商品の詳細 %>
-    <div class="items-detail">
+    <div class="artcle-detail">
       <div class="weight-bold-text">商品の詳細</div>
        <div class="form">
          <div class="weight-bold-text">
           カテゴリー
           <span class="indispensable">必須</span>
          </div>
-          <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+          <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"article-category"}) %>
          <div class="weight-bold-text">
           商品の状態
           <span class="indispensable">必須</span>
          </div>
-         <%= f.collection_select(:status_id, Status.all, :id, :name, {}, {class:"select-box", id:"item-status"}) %>
+         <%= f.collection_select(:status_id, Status.all, :id, :name, {}, {class:"select-box", id:"article-status"}) %>
        </div>
       </div>
 
@@ -76,17 +76,17 @@
           配送料の負担
           <span class="indispensable">必須</span>
         </div>
-         <%= f.collection_select(:shipping_charge_id,ShippingCharge.all, :id, :name, {}, {class:"select-box", id:"item-shipping-charge"}) %>
+         <%= f.collection_select(:shipping_charge_id,ShippingCharge.all, :id, :name, {}, {class:"select-box", id:"article-shipping-charge"}) %>
         <div class="weight-bold-text">
           発送元の地域
           <span class="indispensable">必須</span>
         </div>
-        <%= f.collection_select(:shipping_region_id , ShippingRegion.all, :id, :name, {}, {class:"select-box", id:"item-shipping-region"}) %>
+        <%= f.collection_select(:shipping_region_id , ShippingRegion.all, :id, :name, {}, {class:"select-box", id:"article-shipping-region"}) %>
         <div class="weight-bold-text">
           発送までの日数
           <span class="indispensable">必須</span>
         </div>
-        <%=f.collection_select(:day_until_shipping_id, DayUntilShipping.all, :id, :name, {}, {class:"select-box", id:"item-day_until_shipping"}) %>
+        <%=f.collection_select(:day_until_shipping_id, DayUntilShipping.all, :id, :name, {}, {class:"select-box", id:"article-day-until-shipping"}) %>
       </div>
     </div>
     <%# /配送について %>
