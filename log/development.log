@@ -23655,3 +23655,22 @@ Processing by ItemsController#new as HTML
 Completed 200 OK in 35ms (Views: 34.4ms | ActiveRecord: 0.0ms | Allocations: 22699)
 
 
+Started GET "/" for ::1 at 2020-08-13 11:39:59 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  Rendered shared/_header.html.erb (Duration: 2.6ms | Allocations: 1756)
+  Rendered shared/_footer.html.erb (Duration: 1.7ms | Allocations: 1486)
+  Rendered items/index.html.erb within layouts/application (Duration: 11.8ms | Allocations: 11000)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.0ms | Allocations: 30135)
+
+
+Started GET "/items/new" for ::1 at 2020-08-13 11:40:25 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1545)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms | Allocations: 20529)
+
+
