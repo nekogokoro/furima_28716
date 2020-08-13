@@ -81,7 +81,7 @@
           発送元の地域
           <span class="indispensable">必須</span>
         </div>
-        <%# f.collection_select(:shipping_region , Prefecture.all, :id, :name, {prompt: "--"}, {class:"select-box"}) %>
+        <%= f.collection_select(:shipping_region , ShippingRegion.all, :id, :name, {}, {class:"select-box", id:"item-shipping-region"}) %>
         <div class="weight-bold-text">
           発送までの日数
           <span class="indispensable">必須</span>
