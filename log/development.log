@@ -24479,3 +24479,471 @@ NoMethodError (undefined method `id' for nil:NilClass):
   
 app/controllers/items_controller.rb:23:in `item_params'
 app/controllers/items_controller.rb:13:in `create'
+Started POST "/items" for ::1 at 2020-08-13 14:29:12 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"bot6s2ues2106QxM3R7O3HoWpA/HRgugLNvtI/E1he2QBlcIZyP27yS9hVXcgF+Ma/88IoMTBsbMyiXLW8gQrw==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fb0cc0ab020 @tempfile=#<Tempfile:/var/folders/_2/9gsrkpvd6l59jll0l6dsdmmh0000gn/T/RackMultipart20200813-21572-c83sc8.jpg>, @original_filename="ブローシュ.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"\xE3\x83\x95\xE3\x82\x99\xE3\x83\xAD\xE3\x83\xBC\xE3\x82\xB7\xE3\x83\xA5.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"test", "text"=>"test", "category"=>"2", "status"=>"2", "shipping_charge"=>"3", "shipping_region"=>"14", "day_until_shipping"=>"2", "price"=>"10000"}, "commit"=>"出品する"}
+[31mUnpermitted parameters: :category, :status, :shipping_charge, :shipping_region, :day_until_shipping[0m
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2542)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/items_controller.rb:23:in `item_params'
+app/controllers/items_controller.rb:13:in `create'
+Started POST "/items" for ::1 at 2020-08-13 14:30:56 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"bot6s2ues2106QxM3R7O3HoWpA/HRgugLNvtI/E1he2QBlcIZyP27yS9hVXcgF+Ma/88IoMTBsbMyiXLW8gQrw==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fb0e26dbd58 @tempfile=#<Tempfile:/var/folders/_2/9gsrkpvd6l59jll0l6dsdmmh0000gn/T/RackMultipart20200813-21572-mqw56.jpg>, @original_filename="ブローシュ.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"\xE3\x83\x95\xE3\x82\x99\xE3\x83\xAD\xE3\x83\xBC\xE3\x82\xB7\xE3\x83\xA5.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"test", "text"=>"test", "category"=>"2", "status"=>"2", "shipping_charge"=>"3", "shipping_region"=>"14", "day_until_shipping"=>"2", "price"=>"10000"}, "commit"=>"出品する"}
+[31mUnpermitted parameters: :category, :status, :shipping_charge, :shipping_region, :day_until_shipping[0m
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1637)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/items_controller.rb:23:in `item_params'
+app/controllers/items_controller.rb:13:in `create'
+Started POST "/items" for ::1 at 2020-08-13 14:32:42 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"bot6s2ues2106QxM3R7O3HoWpA/HRgugLNvtI/E1he2QBlcIZyP27yS9hVXcgF+Ma/88IoMTBsbMyiXLW8gQrw==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fb0e2147518 @tempfile=#<Tempfile:/var/folders/_2/9gsrkpvd6l59jll0l6dsdmmh0000gn/T/RackMultipart20200813-21572-7q5shg.jpg>, @original_filename="ブローシュ.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"\xE3\x83\x95\xE3\x82\x99\xE3\x83\xAD\xE3\x83\xBC\xE3\x82\xB7\xE3\x83\xA5.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"test", "text"=>"test", "category"=>"2", "status"=>"2", "shipping_charge"=>"3", "shipping_region"=>"14", "day_until_shipping"=>"2", "price"=>"10000"}, "commit"=>"出品する"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2230)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fb0dc84dea8>
+Did you mean?  try):
+  
+app/controllers/items_controller.rb:13:in `create'
+Started POST "/items" for ::1 at 2020-08-13 14:38:20 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"bot6s2ues2106QxM3R7O3HoWpA/HRgugLNvtI/E1he2QBlcIZyP27yS9hVXcgF+Ma/88IoMTBsbMyiXLW8gQrw==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fb0d7cb11c0 @tempfile=#<Tempfile:/var/folders/_2/9gsrkpvd6l59jll0l6dsdmmh0000gn/T/RackMultipart20200813-21572-1905zaf.jpg>, @original_filename="ブローシュ.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"\xE3\x83\x95\xE3\x82\x99\xE3\x83\xAD\xE3\x83\xBC\xE3\x82\xB7\xE3\x83\xA5.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"test", "text"=>"test", "category"=>"2", "status"=>"2", "shipping_charge"=>"3", "shipping_region"=>"14", "day_until_shipping"=>"2", "price"=>"10000"}, "commit"=>"出品する"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1471)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fb0d7cd19e8>
+Did you mean?  try):
+  
+app/controllers/items_controller.rb:13:in `create'
+Started POST "/items" for ::1 at 2020-08-13 14:39:42 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"bot6s2ues2106QxM3R7O3HoWpA/HRgugLNvtI/E1he2QBlcIZyP27yS9hVXcgF+Ma/88IoMTBsbMyiXLW8gQrw==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fb0d5f11d40 @tempfile=#<Tempfile:/var/folders/_2/9gsrkpvd6l59jll0l6dsdmmh0000gn/T/RackMultipart20200813-21572-1tjyp97.jpg>, @original_filename="ブローシュ.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"\xE3\x83\x95\xE3\x82\x99\xE3\x83\xAD\xE3\x83\xBC\xE3\x82\xB7\xE3\x83\xA5.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"test", "text"=>"test", "category"=>"2", "status"=>"2", "shipping_charge"=>"3", "shipping_region"=>"14", "day_until_shipping"=>"2", "price"=>"10000"}, "commit"=>"出品する"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1470)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fb0d5f39430>
+Did you mean?  try):
+  
+app/controllers/items_controller.rb:13:in `create'
+Started GET "/" for ::1 at 2020-08-13 14:40:00 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  Rendered shared/_header.html.erb (Duration: 2.3ms | Allocations: 1758)
+  Rendered shared/_footer.html.erb (Duration: 2.0ms | Allocations: 1486)
+  Rendered items/index.html.erb within layouts/application (Duration: 15.2ms | Allocations: 11003)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 65ms (Views: 34.3ms | ActiveRecord: 0.0ms | Allocations: 33140)
+
+
+Started GET "/items/new" for ::1 at 2020-08-13 14:44:37 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 192)
+  Rendered items/new.html.erb within layouts/application (Duration: 969.5ms | Allocations: 1421739)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1021ms (Views: 994.6ms | ActiveRecord: 5.4ms | Allocations: 1454917)
+
+
+Started POST "/items" for ::1 at 2020-08-13 14:45:08 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"ZqhEhWZtHnEdKDDnWCat/ZLdKNyRZ1o4GTrCkbCZ2MwAfvBbvI+/PHMQUMEQWqYG2HtKYLOekFqJ6B6DF8EnDQ==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fe1c670de38 @tempfile=#<Tempfile:/var/folders/_2/9gsrkpvd6l59jll0l6dsdmmh0000gn/T/RackMultipart20200813-30245-1y8pe6c.jpg>, @original_filename="ブローシュ.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"\xE3\x83\x95\xE3\x82\x99\xE3\x83\xAD\xE3\x83\xBC\xE3\x82\xB7\xE3\x83\xA5.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"test", "text"=>"test", "category_id"=>"3", "status_id"=>"2", "shipping_charge_id"=>"3", "shipping_region_id"=>"5", "day_until_shipping_id"=>"3", "price"=>"10000"}, "commit"=>"出品する"}
+Started GET "/users/sign_in" for ::1 at 2020-08-13 14:47:31 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 1.6ms | Allocations: 805)
+  Rendered shared/_second-footer.html.erb (Duration: 1.1ms | Allocations: 434)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 8.0ms | Allocations: 2496)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 28.5ms | ActiveRecord: 4.9ms | Allocations: 32965)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-08-13 14:47:41 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"0FhgBZ0vN7INBS2yCaUzLozPISVqcz/HuZEEH3fFzqvg74wXN8yskuLu/cwhDVzpzmE3RyxSDPWIyBXvYass3g==", "user"=>{"email"=>"tes@tes.mail", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'tes@tes.mail' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.3ms | Allocations: 2884)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"0FhgBZ0vN7INBS2yCaUzLozPISVqcz/HuZEEH3fFzqvg74wXN8yskuLu/cwhDVzpzmE3RyxSDPWIyBXvYass3g==", "user"=>{"email"=>"tes@tes.mail", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 0.9ms | Allocations: 696)
+  Rendered shared/_second-footer.html.erb (Duration: 0.2ms | Allocations: 313)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1470)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 238ms (Views: 28.7ms | ActiveRecord: 0.0ms | Allocations: 20806)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-08-13 14:47:43 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"waUBXXriIrrJ96pW7VWJO/mj9ClYHd4V3HfyVrqbL4s/KCzmdl9nOJmjI0/syxhr6EpsBBxI03M8Zjq+EGa6yQ==", "user"=>{"email"=>"tes@tes.mail", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'tes@tes.mail' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.4ms | Allocations: 2311)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"waUBXXriIrrJ96pW7VWJO/mj9ClYHd4V3HfyVrqbL4s/KCzmdl9nOJmjI0/syxhr6EpsBBxI03M8Zjq+EGa6yQ==", "user"=>{"email"=>"tes@tes.mail", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 1.0ms | Allocations: 695)
+  Rendered shared/_second-footer.html.erb (Duration: 0.1ms | Allocations: 313)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1462)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 230ms (Views: 21.4ms | ActiveRecord: 0.0ms | Allocations: 20224)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-08-13 14:47:50 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 1.6ms | Allocations: 695)
+  Rendered shared/_second-footer.html.erb (Duration: 0.2ms | Allocations: 313)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1471)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.0ms | Allocations: 20681)
+
+
+Started GET "/" for ::1 at 2020-08-13 14:47:53 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  Rendered shared/_header.html.erb (Duration: 2.7ms | Allocations: 1776)
+  Rendered shared/_footer.html.erb (Duration: 3.2ms | Allocations: 1507)
+  Rendered items/index.html.erb within layouts/application (Duration: 19.4ms | Allocations: 11088)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 81ms (Views: 79.5ms | ActiveRecord: 0.0ms | Allocations: 30215)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-08-13 14:47:55 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 1.0ms | Allocations: 696)
+  Rendered shared/_second-footer.html.erb (Duration: 0.3ms | Allocations: 313)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 4651)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.0ms | Allocations: 24546)
+
+
+Started POST "/users" for ::1 at 2020-08-13 14:48:34 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"rjo6gK/tTEQwcQdBuS8QQYo9J2RMDw3TLuviiDPaCOKAlrG/yNpbu0Kd8XAyqZIQ78DkH1WJsJt5UzRSMZPi2g==", "user"=>{"nick_name"=>"test", "email"=>"tes@tes.mail", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "last_name"=>"てすと", "first_name"=>"てすと", "last_name_kana"=>"テスト", "first_name_kana"=>"テスト", "birthday(1i)"=>"1931", "birthday(2i)"=>"3", "birthday(3i)"=>"10"}, "commit"=>"会員登録"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'tes@tes.mail' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`nick_name`, `email`, `encrypted_password`, `last_name`, `first_name`, `last_name_kana`, `first_name_kana`, `birthday`, `created_at`, `updated_at`) VALUES ('test', 'tes@tes.mail', '$2a$12$mLsm5qXvZMWzXNYZRueYC.rtfuYPgM2pM7BBfi9pXaKf1WHvBNyTS', 'てすと', 'てすと', 'テスト', 'テスト', '1931-03-10', '2020-08-13 05:48:34.602576', '2020-08-13 05:48:34.602576')[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 217ms (ActiveRecord: 1.7ms | Allocations: 12132)
+
+
+Started GET "/" for ::1 at 2020-08-13 14:48:34 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 2.6ms | Allocations: 2338)
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 1080)
+  Rendered items/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 9647)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.2ms | Allocations: 28630)
+
+
+Started GET "/items/new" for ::1 at 2020-08-13 14:48:41 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 3416)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 22420)
+
+
+Started POST "/items" for ::1 at 2020-08-13 14:49:16 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"k6TU+by64r+L+qb+F0gFBUPFo6mEvV1x+QSD3hs4pTT1cmAnZlhD8uXCxthfNA7+CWPBFaZElxNp1l/MvGBa9Q==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fe1c66a72c8 @tempfile=#<Tempfile:/var/folders/_2/9gsrkpvd6l59jll0l6dsdmmh0000gn/T/RackMultipart20200813-30245-19fwf8y.jpg>, @original_filename="ブローシュ.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"\xE3\x83\x95\xE3\x82\x99\xE3\x83\xAD\xE3\x83\xBC\xE3\x82\xB7\xE3\x83\xA5.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "text"=>"テスト", "category_id"=>"2", "status_id"=>"2", "shipping_charge_id"=>"3", "shipping_region_id"=>"2", "day_until_shipping_id"=>"2", "price"=>"10000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ (pry):8:in `create'
+Completed 500 Internal Server Error in 169929ms (ActiveRecord: 0.5ms | Allocations: 242307)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'category_id' for Item.):
+  
+app/controllers/items_controller.rb:14:in `create'
+Started POST "/items" for ::1 at 2020-08-13 14:52:29 +0900
+Completed 500 Internal Server Error in 528540ms (ActiveRecord: 0.0ms | Allocations: 837275)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/items_controller.rb:24:in `item_params'
+app/controllers/items_controller.rb:14:in `create'
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"k6TU+by64r+L+qb+F0gFBUPFo6mEvV1x+QSD3hs4pTT1cmAnZlhD8uXCxthfNA7+CWPBFaZElxNp1l/MvGBa9Q==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fe1c62f7c68 @tempfile=#<Tempfile:/var/folders/_2/9gsrkpvd6l59jll0l6dsdmmh0000gn/T/RackMultipart20200813-30245-1mv6k8u.jpg>, @original_filename="ブローシュ.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"\xE3\x83\x95\xE3\x82\x99\xE3\x83\xAD\xE3\x83\xBC\xE3\x82\xB7\xE3\x83\xA5.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "text"=>"テスト", "category_id"=>"2", "status_id"=>"2", "shipping_charge_id"=>"3", "shipping_region_id"=>"2", "day_until_shipping_id"=>"2", "price"=>"10000"}, "commit"=>"出品する"}
+Started POST "/items" for ::1 at 2020-08-13 14:53:57 +0900
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:23:in `item_params'
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 4.2ms | Allocations: 21768)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'category_id' for Item.):
+  
+app/controllers/items_controller.rb:13:in `create'
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"GrdtYOWwGUsUbtQ/xTotWr7KddeUCbMeohxX3Z55oMDkOkDb6Q1cyUQ6XSbEpLwKryPt+tBcvnhCDZ81NIQ1gg==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fe1c6504a38 @tempfile=#<Tempfile:/var/folders/_2/9gsrkpvd6l59jll0l6dsdmmh0000gn/T/RackMultipart20200813-30245-xzztm8.jpg>, @original_filename="ブローシュ.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"\xE3\x83\x95\xE3\x82\x99\xE3\x83\xAD\xE3\x83\xBC\xE3\x82\xB7\xE3\x83\xA5.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "text"=>"テスト", "category_id"=>"2", "status_id"=>"2", "shipping_charge_id"=>"3", "shipping_region_id"=>"2", "day_until_shipping_id"=>"2", "price"=>"10000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:23:in `item_params'
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 4.2ms | Allocations: 20863)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'category_id' for Item.):
+  
+app/controllers/items_controller.rb:13:in `create'
+Started POST "/items" for ::1 at 2020-08-13 14:54:15 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"GrdtYOWwGUsUbtQ/xTotWr7KddeUCbMeohxX3Z55oMDkOkDb6Q1cyUQ6XSbEpLwKryPt+tBcvnhCDZ81NIQ1gg==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007ff9e54a0a38 @tempfile=#<Tempfile:/var/folders/_2/9gsrkpvd6l59jll0l6dsdmmh0000gn/T/RackMultipart20200813-30397-184damu.jpg>, @original_filename="ブローシュ.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"\xE3\x83\x95\xE3\x82\x99\xE3\x83\xAD\xE3\x83\xBC\xE3\x82\xB7\xE3\x83\xA5.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "text"=>"テスト", "category_id"=>"2", "status_id"=>"2", "shipping_charge_id"=>"3", "shipping_region_id"=>"2", "day_until_shipping_id"=>"2", "price"=>"10000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:23:in `item_params'
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 4.3ms | Allocations: 22706)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'category_id' for Item.):
+  
+app/controllers/items_controller.rb:13:in `create'
+Started POST "/items" for ::1 at 2020-08-13 14:55:13 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"GrdtYOWwGUsUbtQ/xTotWr7KddeUCbMeohxX3Z55oMDkOkDb6Q1cyUQ6XSbEpLwKryPt+tBcvnhCDZ81NIQ1gg==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007ff9e5eb1f18 @tempfile=#<Tempfile:/var/folders/_2/9gsrkpvd6l59jll0l6dsdmmh0000gn/T/RackMultipart20200813-30397-b3mxay.jpg>, @original_filename="ブローシュ.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"\xE3\x83\x95\xE3\x82\x99\xE3\x83\xAD\xE3\x83\xBC\xE3\x82\xB7\xE3\x83\xA5.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "text"=>"テスト", "category_id"=>"2", "status_id"=>"2", "shipping_charge_id"=>"3", "shipping_region_id"=>"2", "day_until_shipping_id"=>"2", "price"=>"10000"}, "commit"=>"出品する"}
+[31mUnpermitted parameter: :category_id[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:23:in `item_params'
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 3.9ms | Allocations: 20940)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'status_id' for Item.):
+  
+app/controllers/items_controller.rb:13:in `create'
+Started POST "/items" for ::1 at 2020-08-13 14:55:49 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"GrdtYOWwGUsUbtQ/xTotWr7KddeUCbMeohxX3Z55oMDkOkDb6Q1cyUQ6XSbEpLwKryPt+tBcvnhCDZ81NIQ1gg==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007ff9e5c5a7b0 @tempfile=#<Tempfile:/var/folders/_2/9gsrkpvd6l59jll0l6dsdmmh0000gn/T/RackMultipart20200813-30397-1srmgs7.jpg>, @original_filename="ブローシュ.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"\xE3\x83\x95\xE3\x82\x99\xE3\x83\xAD\xE3\x83\xBC\xE3\x82\xB7\xE3\x83\xA5.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "text"=>"テスト", "category_id"=>"2", "status_id"=>"2", "shipping_charge_id"=>"3", "shipping_region_id"=>"2", "day_until_shipping_id"=>"2", "price"=>"10000"}, "commit"=>"出品する"}
+[31mUnpermitted parameters: :category_id, :status_id, :shipping_charge_id, :shipping_region_id, :day_until_shipping_id[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:23:in `item_params'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO `items` (`image`, `title`, `text`, `price`, `user_id`, `created_at`, `updated_at`) VALUES ('#<ActionDispatch::Http::UploadedFile:0x00007ff9e5c5a7b0>', 'テスト', 'テスト', 10000, 1, '2020-08-13 05:55:49.133697', '2020-08-13 05:55:49.133697')[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 32ms (ActiveRecord: 4.7ms | Allocations: 23072)
+
+
+Started GET "/" for ::1 at 2020-08-13 14:55:49 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 1042.8ms | Allocations: 1416637)
+  Rendered shared/_footer.html.erb (Duration: 1.2ms | Allocations: 1515)
+  Rendered items/index.html.erb within layouts/application (Duration: 1050.3ms | Allocations: 1425968)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1076ms (Views: 1074.6ms | ActiveRecord: 0.3ms | Allocations: 1448146)
+
+
+Started GET "/items/new" for ::1 at 2020-08-13 14:59:59 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 183)
+  Rendered items/new.html.erb within layouts/application (Duration: 7.2ms | Allocations: 7608)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 21.3ms | ActiveRecord: 2.0ms | Allocations: 36295)
+
+
+Started POST "/items" for ::1 at 2020-08-13 15:02:57 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"TBHJD38GyPPH1SLTr46cd5e/9VNeuFXVrVJ5lBEJmLYqx33RpeRpvqntQvXn8peM3RmX73xBn7c9gKWGtlFndw==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007ff9d3917ad8 @tempfile=#<Tempfile:/var/folders/_2/9gsrkpvd6l59jll0l6dsdmmh0000gn/T/RackMultipart20200813-30397-1meu43l.jpg>, @original_filename="2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"2.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "text"=>"テスト", "category_id"=>"2", "status_id"=>"2", "shipping_charge_id"=>"2", "shipping_region_id"=>"2", "day_until_shipping_id"=>"2", "price"=>"10000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:23:in `item_params'
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 2.9ms | Allocations: 11556)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'category_id' for Item.):
+  
+app/controllers/items_controller.rb:13:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('2239540846944957360', 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateArticles (20200813024415)
+  [1m[35m (4.4ms)[0m  [1m[35mDROP TABLE `articles`[0m
+  [1m[36mprimary::SchemaMigration Destroy (0.8ms)[0m  [1m[31mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20200813024415'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('2239540846944957360')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('2239540846944957360', 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateArticles (20200813024415)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT @@innodb_file_per_table = 1 AND @@innodb_file_format = 'Barracuda'[0m
+  [1m[35m (10.2ms)[0m  [1m[35mCREATE TABLE `articles` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255) NOT NULL, `text` text NOT NULL, `category_id` int NOT NULL, `shipping_charges_id` int NOT NULL, `status_id` int NOT NULL, `shipping_region_id` int NOT NULL, `day_until_shipping_id` int NOT NULL, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200813024415')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('2239540846944957360')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started POST "/items" for ::1 at 2020-08-13 15:32:53 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"eOjM+78qwc7/lRkfPxb4bakveNe7F5FOhnZJBu8QiOaGZeFAs5eETK/BkAY+iGk9uMbg+v9CnChmZ4HuRe0dpA==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007ff188e2b270 @tempfile=#<Tempfile:/var/folders/_2/9gsrkpvd6l59jll0l6dsdmmh0000gn/T/RackMultipart20200813-30973-o74wgr.jpg>, @original_filename="2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"2.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "text"=>"テスト", "category_id"=>"2", "status_id"=>"2", "shipping_charge_id"=>"2", "shipping_region_id"=>"2", "day_until_shipping_id"=>"2", "price"=>"10000"}, "commit"=>"出品する"}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 2319)
+
+
+  
+ArgumentError (wrong number of arguments (given 5, expected 1..2)):
+  
+app/models/item.rb:3:in `<class:Item>'
+app/models/item.rb:1:in `<main>'
+app/controllers/items_controller.rb:13:in `create'
+Started POST "/items" for ::1 at 2020-08-13 15:35:10 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"eOjM+78qwc7/lRkfPxb4bakveNe7F5FOhnZJBu8QiOaGZeFAs5eETK/BkAY+iGk9uMbg+v9CnChmZ4HuRe0dpA==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007ff18419b8d8 @tempfile=#<Tempfile:/var/folders/_2/9gsrkpvd6l59jll0l6dsdmmh0000gn/T/RackMultipart20200813-30973-c0cenl.jpg>, @original_filename="2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"2.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "text"=>"テスト", "category_id"=>"2", "status_id"=>"2", "shipping_charge_id"=>"2", "shipping_region_id"=>"2", "day_until_shipping_id"=>"2", "price"=>"10000"}, "commit"=>"出品する"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2028)
+
+
+  
+ArgumentError (wrong number of arguments (given 5, expected 1..2)):
+  
+app/models/item.rb:3:in `<class:Item>'
+app/models/item.rb:1:in `<main>'
+app/controllers/items_controller.rb:13:in `create'
+Started POST "/items" for ::1 at 2020-08-13 15:35:27 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"eOjM+78qwc7/lRkfPxb4bakveNe7F5FOhnZJBu8QiOaGZeFAs5eETK/BkAY+iGk9uMbg+v9CnChmZ4HuRe0dpA==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007ff184b32b08 @tempfile=#<Tempfile:/var/folders/_2/9gsrkpvd6l59jll0l6dsdmmh0000gn/T/RackMultipart20200813-30973-10yu045.jpg>, @original_filename="2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"2.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "text"=>"テスト", "category_id"=>"2", "status_id"=>"2", "shipping_charge_id"=>"2", "shipping_region_id"=>"2", "day_until_shipping_id"=>"2", "price"=>"10000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:23:in `item_params'
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 6.1ms | Allocations: 22675)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'category_id' for Item.):
+  
+app/controllers/items_controller.rb:13:in `create'
+Started POST "/items" for ::1 at 2020-08-13 15:36:00 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"eOjM+78qwc7/lRkfPxb4bakveNe7F5FOhnZJBu8QiOaGZeFAs5eETK/BkAY+iGk9uMbg+v9CnChmZ4HuRe0dpA==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007ff1891153c8 @tempfile=#<Tempfile:/var/folders/_2/9gsrkpvd6l59jll0l6dsdmmh0000gn/T/RackMultipart20200813-30973-13o2or9.jpg>, @original_filename="2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"2.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "text"=>"テスト", "category_id"=>"2", "status_id"=>"2", "shipping_charge_id"=>"2", "shipping_region_id"=>"2", "day_until_shipping_id"=>"2", "price"=>"10000"}, "commit"=>"出品する"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2031)
+
+
+  
+ArgumentError (wrong number of arguments (given 5, expected 1..2)):
+  
+app/models/item.rb:3:in `<class:Item>'
+app/models/item.rb:1:in `<main>'
+app/controllers/items_controller.rb:13:in `create'
+Started POST "/items" for ::1 at 2020-08-13 15:36:37 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"eOjM+78qwc7/lRkfPxb4bakveNe7F5FOhnZJBu8QiOaGZeFAs5eETK/BkAY+iGk9uMbg+v9CnChmZ4HuRe0dpA==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007ff1843838a8 @tempfile=#<Tempfile:/var/folders/_2/9gsrkpvd6l59jll0l6dsdmmh0000gn/T/RackMultipart20200813-30973-1fxj1jw.jpg>, @original_filename="2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"2.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "text"=>"テスト", "category_id"=>"2", "status_id"=>"2", "shipping_charge_id"=>"2", "shipping_region_id"=>"2", "day_until_shipping_id"=>"2", "price"=>"10000"}, "commit"=>"出品する"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2371)
+
+
+  
+SyntaxError (/Users/uchikawatakuya/projects/furima_28716/app/models/item.rb:9: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+  validates :category_id,:shipping_charge_...
+            ^):
+  
+app/models/item.rb:9: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/item.rb:9: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/item.rb:9: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/items_controller.rb:13:in `create'
+Started POST "/items" for ::1 at 2020-08-13 15:37:09 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"eOjM+78qwc7/lRkfPxb4bakveNe7F5FOhnZJBu8QiOaGZeFAs5eETK/BkAY+iGk9uMbg+v9CnChmZ4HuRe0dpA==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007ff18426b268 @tempfile=#<Tempfile:/var/folders/_2/9gsrkpvd6l59jll0l6dsdmmh0000gn/T/RackMultipart20200813-30973-f0r6ml.jpg>, @original_filename="2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"2.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "text"=>"テスト", "category_id"=>"2", "status_id"=>"2", "shipping_charge_id"=>"2", "shipping_region_id"=>"2", "day_until_shipping_id"=>"2", "price"=>"10000"}, "commit"=>"出品する"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2031)
+
+
+  
+ArgumentError (wrong number of arguments (given 5, expected 1..2)):
+  
+app/models/item.rb:3:in `<class:Item>'
+app/models/item.rb:1:in `<main>'
+app/controllers/items_controller.rb:13:in `create'
+Started POST "/items" for ::1 at 2020-08-13 15:37:52 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"eOjM+78qwc7/lRkfPxb4bakveNe7F5FOhnZJBu8QiOaGZeFAs5eETK/BkAY+iGk9uMbg+v9CnChmZ4HuRe0dpA==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007ff184e71fa8 @tempfile=#<Tempfile:/var/folders/_2/9gsrkpvd6l59jll0l6dsdmmh0000gn/T/RackMultipart20200813-30973-8c20sw.jpg>, @original_filename="2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"2.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "text"=>"テスト", "category_id"=>"2", "status_id"=>"2", "shipping_charge_id"=>"2", "shipping_region_id"=>"2", "day_until_shipping_id"=>"2", "price"=>"10000"}, "commit"=>"出品する"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2371)
+
+
+  
+SyntaxError (/Users/uchikawatakuya/projects/furima_28716/app/models/item.rb:9: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+  validates :category,:shipping_charge,:st...
+            ^):
+  
+app/models/item.rb:9: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/item.rb:9: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/item.rb:9: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/items_controller.rb:13:in `create'
+Started POST "/items" for ::1 at 2020-08-13 15:38:33 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"eOjM+78qwc7/lRkfPxb4bakveNe7F5FOhnZJBu8QiOaGZeFAs5eETK/BkAY+iGk9uMbg+v9CnChmZ4HuRe0dpA==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007ff184f3b178 @tempfile=#<Tempfile:/var/folders/_2/9gsrkpvd6l59jll0l6dsdmmh0000gn/T/RackMultipart20200813-30973-13qg0r5.jpg>, @original_filename="2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"2.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "text"=>"テスト", "category_id"=>"2", "status_id"=>"2", "shipping_charge_id"=>"2", "shipping_region_id"=>"2", "day_until_shipping_id"=>"2", "price"=>"10000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:23:in `item_params'
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 6.6ms | Allocations: 20945)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'category_id' for Item.):
+  
+app/controllers/items_controller.rb:13:in `create'
+Started POST "/items" for ::1 at 2020-08-13 15:39:54 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"eOjM+78qwc7/lRkfPxb4bakveNe7F5FOhnZJBu8QiOaGZeFAs5eETK/BkAY+iGk9uMbg+v9CnChmZ4HuRe0dpA==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007ff1842a0d28 @tempfile=#<Tempfile:/var/folders/_2/9gsrkpvd6l59jll0l6dsdmmh0000gn/T/RackMultipart20200813-30973-w6zb73.jpg>, @original_filename="2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"2.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "text"=>"テスト", "category_id"=>"2", "status_id"=>"2", "shipping_charge_id"=>"2", "shipping_region_id"=>"2", "day_until_shipping_id"=>"2", "price"=>"10000"}, "commit"=>"出品する"}
+[31mUnpermitted parameters: :category_id, :status_id, :shipping_charge_id, :shipping_region_id, :day_until_shipping_id[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:23:in `item_params'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO `items` (`image`, `title`, `text`, `price`, `user_id`, `created_at`, `updated_at`) VALUES ('#<ActionDispatch::Http::UploadedFile:0x00007ff1842a0d28>', 'テスト', 'テスト', 10000, 1, '2020-08-13 06:39:54.756691', '2020-08-13 06:39:54.756691')[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 47ms (ActiveRecord: 5.0ms | Allocations: 23107)
+
+
+Started GET "/" for ::1 at 2020-08-13 15:39:54 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 1029.0ms | Allocations: 1416638)
+  Rendered shared/_footer.html.erb (Duration: 1.1ms | Allocations: 1515)
+  Rendered items/index.html.erb within layouts/application (Duration: 1036.2ms | Allocations: 1425973)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1060ms (Views: 1058.8ms | ActiveRecord: 0.3ms | Allocations: 1448146)
+
+
