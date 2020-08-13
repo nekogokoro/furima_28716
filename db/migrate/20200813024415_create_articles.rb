@@ -5,6 +5,7 @@ class CreateArticles < ActiveRecord::Migration[6.0]
      t.text       :text         , null: false
      t.integer    :category_id  , null: false
      t.integer    :shipping_charges_id ,null: false
+     t.integer    :status_id    , null: false
      t.timestamps
     end
   end
