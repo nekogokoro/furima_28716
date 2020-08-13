@@ -23674,3 +23674,683 @@ Processing by ItemsController#new as HTML
 Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms | Allocations: 20529)
 
 
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('2239540846944957360', 0)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateArticles (20200813024415)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT @@innodb_file_per_table = 1 AND @@innodb_file_format = 'Barracuda'[0m
+  [1m[35m (16.1ms)[0m  [1m[35mCREATE TABLE `articles` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255) NOT NULL, `text` text NOT NULL, `category_id` int NOT NULL, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200813024415')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('2239540846944957360')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/items/new" for ::1 at 2020-08-13 11:59:35 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1607)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 17.2ms | ActiveRecord: 0.0ms | Allocations: 29955)
+
+
+Started GET "/items/new" for ::1 at 2020-08-13 12:04:24 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 177)
+  Rendered items/new.html.erb within layouts/application (Duration: 12.6ms | Allocations: 5902)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 30.4ms | ActiveRecord: 0.0ms | Allocations: 25796)
+
+
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('2239540846944957360', 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('2239540846944957360')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('2239540846944957360', 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateArticles (20200813024415)
+  [1m[35m (5.9ms)[0m  [1m[35mDROP TABLE `articles`[0m
+  [1m[36mprimary::SchemaMigration Destroy (1.1ms)[0m  [1m[31mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20200813024415'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('2239540846944957360')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('2239540846944957360', 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateArticles (20200813024415)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT @@innodb_file_per_table = 1 AND @@innodb_file_format = 'Barracuda'[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE `articles` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255) NOT NULL, `text` text NOT NULL, `category_id` int NOT NULL, `shipping_charges_id` int NOT NULL, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200813024415')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('2239540846944957360')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/items/new" for ::1 at 2020-08-13 12:21:32 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 177)
+  Rendered items/new.html.erb within layouts/application (Duration: 8.3ms | Allocations: 4134)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.0ms | Allocations: 15104)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fb0d5b3e2e0>::Burden):
+    76:           配送料の負担
+    77:           <span class="indispensable">必須</span>
+    78:         </div>
+    79:          <%= f.collection_select(:shipping_charges, Burden.all, :id, :name, {prompt: "--"}, {class:"select-box"}) %>
+    80:         <div class="weight-bold-text">
+    81:           発送元の地域
+    82:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:79
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-08-13 12:22:16 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 2972)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 2.2ms | Allocations: 13464)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fb0d5b3e2e0>::Burden):
+    76:           配送料の負担
+    77:           <span class="indispensable">必須</span>
+    78:         </div>
+    79:          <%= f.collection_select(:shipping_charges, Burden.all, :id, :name, {prompt: "--"}, {class:"select-box"}) %>
+    80:         <div class="weight-bold-text">
+    81:           発送元の地域
+    82:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:79
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-08-13 12:22:51 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 2972)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 2.2ms | Allocations: 13453)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fb0d5b3e2e0>::Burden):
+    76:           配送料の負担
+    77:           <span class="indispensable">必須</span>
+    78:         </div>
+    79:          <%= f.collection_select(:shipping_charges, Burden.all, :id, :name, {prompt: "--"}, {class:"select-box"}) %>
+    80:         <div class="weight-bold-text">
+    81:           発送元の地域
+    82:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:79
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-08-13 12:23:14 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 177)
+  Rendered items/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 4146)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 2.3ms | Allocations: 15328)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fb0e2538398>::Burden):
+    76:           配送料の負担
+    77:           <span class="indispensable">必須</span>
+    78:         </div>
+    79:          <%= f.collection_select(:shipping_charge, Burden.all, :id, :name, {prompt: "--"}, {class:"select-box"}) %>
+    80:         <div class="weight-bold-text">
+    81:           発送元の地域
+    82:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:79
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-08-13 12:23:15 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2598)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 3495)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fb0e2538398>::Burden):
+    76:           配送料の負担
+    77:           <span class="indispensable">必須</span>
+    78:         </div>
+    79:          <%= f.collection_select(:shipping_charge, Burden.all, :id, :name, {prompt: "--"}, {class:"select-box"}) %>
+    80:         <div class="weight-bold-text">
+    81:           発送元の地域
+    82:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:79
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-08-13 12:23:24 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 177)
+  Rendered items/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 3004)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.0ms | Allocations: 22999)
+
+
+Started GET "/items/new" for ::1 at 2020-08-13 12:24:07 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 177)
+  Rendered items/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 3752)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 5471)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fb0e24c3ea8>::Burden):
+    76:           配送料の負担
+    77:           <span class="indispensable">必須</span>
+    78:         </div>
+    79:          <%= f.collection_select(:shipping_charge, Burden.all, :id, :name, {prompt: "--"}, {class:"select-box"}) %>
+    80:         <div class="weight-bold-text">
+    81:           発送元の地域
+    82:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:79
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-08-13 12:24:53 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 2972)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 2.0ms | Allocations: 13441)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fb0e24c3ea8>::Burden):
+    76:           配送料の負担
+    77:           <span class="indispensable">必須</span>
+    78:         </div>
+    79:          <%= f.collection_select(:shipping_charge, Burden.all, :id, :name, {prompt: "--"}, {class:"select-box"}) %>
+    80:         <div class="weight-bold-text">
+    81:           発送元の地域
+    82:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:79
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-08-13 12:26:39 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 177)
+  Rendered items/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 3004)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms | Allocations: 22987)
+
+
+Started GET "/items/new" for ::1 at 2020-08-13 12:27:25 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 177)
+  Rendered items/new.html.erb within layouts/application (Duration: 7.2ms | Allocations: 3752)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 5477)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fb0d5e5aaf0>::Burden):
+    76:           配送料の負担
+    77:           <span class="indispensable">必須</span>
+    78:         </div>
+    79:          <%= f.collection_select(:shipping_charge, Burden.all, :id, :name, {prompt: "--"}, {class:"select-box"}) %>
+    80:         <div class="weight-bold-text">
+    81:           発送元の地域
+    82:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:79
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-08-13 12:28:42 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 177)
+  Rendered items/new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 3756)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 5487)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fb0db69dde8>::ShippingFeeStatus):
+    76:           配送料の負担
+    77:           <span class="indispensable">必須</span>
+    78:         </div>
+    79:          <%= f.collection_select(:shipping_charge, ShippingFeeStatus.all, :id, :name, {prompt: "--"}, {class:"select-box"}) %>
+    80:         <div class="weight-bold-text">
+    81:           発送元の地域
+    82:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:79
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-08-13 12:28:43 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2599)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 3492)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fb0db69dde8>::ShippingFeeStatus):
+    76:           配送料の負担
+    77:           <span class="indispensable">必須</span>
+    78:         </div>
+    79:          <%= f.collection_select(:shipping_charge, ShippingFeeStatus.all, :id, :name, {prompt: "--"}, {class:"select-box"}) %>
+    80:         <div class="weight-bold-text">
+    81:           発送元の地域
+    82:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:79
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-08-13 12:30:26 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 177)
+  Rendered items/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 3755)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 5486)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fb0db575b00>::ShippingFeeStatus):
+    76:           配送料の負担
+    77:           <span class="indispensable">必須</span>
+    78:         </div>
+    79:          <%= f.collection_select(:shipping_charge,ShippingFeeStatus.all, :id, :name,{},{class:"select-box", id:"shipping_charge"}) %>
+    80:         <div class="weight-bold-text">
+    81:           発送元の地域
+    82:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:79
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-08-13 12:32:02 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 2972)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 2.0ms | Allocations: 13497)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fb0db575b00>::ShippingFeeStatus):
+    76:           配送料の負担
+    77:           <span class="indispensable">必須</span>
+    78:         </div>
+    79:          <%= f.collection_select(:shipping_charge,ShippingFeeStatus.all, :id, :name,{},{class:"select-box", id:"shipping_charge"}) %>
+    80:         <div class="weight-bold-text">
+    81:           発送元の地域
+    82:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:79
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-08-13 12:33:39 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 177)
+  Rendered items/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 3754)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 5483)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fb0d7c8d270>::ShippingFeeStatus):
+    76:           配送料の負担
+    77:           <span class="indispensable">必須</span>
+    78:         </div>
+    79:          <%= f.collection_select(:shipping_charge, ShippingFeeStatus.all, :id, :name, {}, {class:"select-box", id:"item-shipping-charge"}) %>
+    80:         <div class="weight-bold-text">
+    81:           発送元の地域
+    82:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:79
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-08-13 12:34:51 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 177)
+  Rendered items/new.html.erb within layouts/application (Duration: 7.2ms | Allocations: 3754)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 5483)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fb0db5e6918>::ShippingFeeStatus):
+    76:           配送料の負担
+    77:           <span class="indispensable">必須</span>
+    78:         </div>
+    79:          <%= f.collection_select(:shipping_charge, ShippingFeeStatus.all, :id, :name, {}, {class:"select-box", id:"item-shipping-fee-status"}) %>
+    80:         <div class="weight-bold-text">
+    81:           発送元の地域
+    82:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:79
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-08-13 12:35:48 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 177)
+  Rendered items/new.html.erb within layouts/application (Duration: 7.4ms | Allocations: 3755)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 5484)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fb0c90259f0>::ShippingFeeStatus):
+    76:           配送料の負担
+    77:           <span class="indispensable">必須</span>
+    78:         </div>
+    79:          <%= f.collection_select(:shipping_fee_status_id, ShippingFeeStatus.all, :id, :name, {}, {class:"select-box", id:"item-shipping-fee-status"}) %>
+    80:         <div class="weight-bold-text">
+    81:           発送元の地域
+    82:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:79
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-08-13 12:36:26 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 177)
+  Rendered items/new.html.erb within layouts/application (Duration: 7.3ms | Allocations: 3755)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 5484)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fb0cc112fb8>::ShippingFeeStatus):
+    76:           配送料の負担
+    77:           <span class="indispensable">必須</span>
+    78:         </div>
+    79:          <%= f.collection_select(:shipping_chare, ShippingFeeStatus.all, :id, :name, {}, {class:"select-box", id:"item-shipping-fee-status"}) %>
+    80:         <div class="weight-bold-text">
+    81:           発送元の地域
+    82:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:79
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-08-13 12:36:27 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 2598)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 3489)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fb0cc112fb8>::ShippingFeeStatus):
+    76:           配送料の負担
+    77:           <span class="indispensable">必須</span>
+    78:         </div>
+    79:          <%= f.collection_select(:shipping_chare, ShippingFeeStatus.all, :id, :name, {}, {class:"select-box", id:"item-shipping-fee-status"}) %>
+    80:         <div class="weight-bold-text">
+    81:           発送元の地域
+    82:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:79
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-08-13 12:36:37 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 177)
+  Rendered items/new.html.erb within layouts/application (Duration: 7.2ms | Allocations: 3755)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 5484)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fb0c92ad6c8>::ShippingFeeStatus):
+    76:           配送料の負担
+    77:           <span class="indispensable">必須</span>
+    78:         </div>
+    79:          <%= f.collection_select(:shipping_chareg, ShippingFeeStatus.all, :id, :name, {}, {class:"select-box", id:"item-shipping-fee-status"}) %>
+    80:         <div class="weight-bold-text">
+    81:           発送元の地域
+    82:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:79
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-08-13 12:36:59 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 177)
+  Rendered items/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 3753)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 5482)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fb0c5bdc388>::ShippingFeeStatus):
+    76:           配送料の負担
+    77:           <span class="indispensable">必須</span>
+    78:         </div>
+    79:          <%= f.collection_select(:shipping_charge, ShippingFeeStatus.all, :id, :name, {}, {class:"select-box", id:"item-shipping-fee-status"}) %>
+    80:         <div class="weight-bold-text">
+    81:           発送元の地域
+    82:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:79
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-08-13 12:39:18 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2972)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 2.3ms | Allocations: 13447)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fb0c5bdc388>::ShippingFeeStatus):
+    76:           配送料の負担
+    77:           <span class="indispensable">必須</span>
+    78:         </div>
+    79:          <%= f.collection_select(:shipping_charge, ShippingFeeStatus.all, :id, :name, {}, {class:"select-box", id:"item-shipping-fee-status"}) %>
+    80:         <div class="weight-bold-text">
+    81:           発送元の地域
+    82:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:79
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-08-13 12:39:47 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2593)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 3483)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fb0c5bdc388>::ShippingFeeStatus):
+    76:           配送料の負担
+    77:           <span class="indispensable">必須</span>
+    78:         </div>
+    79:          <%= f.collection_select(:shipping_charge, ShippingFeeStatus.all, :id, :name, {}, {class:"select-box", id:"item-shipping-fee-status"}) %>
+    80:         <div class="weight-bold-text">
+    81:           発送元の地域
+    82:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:79
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-08-13 12:44:56 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 2972)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 2.3ms | Allocations: 13447)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fb0c5bdc388>::ShippingFeeStatus):
+    76:           配送料の負担
+    77:           <span class="indispensable">必須</span>
+    78:         </div>
+    79:          <%= f.collection_select(:shipping_charge, ShippingFeeStatus.all, :id, :name, {}, {class:"select-box", id:"item-shipping-fee-status"}) %>
+    80:         <div class="weight-bold-text">
+    81:           発送元の地域
+    82:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:79
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-08-13 12:45:54 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 2972)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 2.6ms | Allocations: 13449)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fb0c5bdc388>::ShippingFeeStatus):
+    76:           配送料の負担
+    77:           <span class="indispensable">必須</span>
+    78:         </div>
+    79:          <%= f.collection_select(:shipping_charge, ShippingFeeStatus.all, :id, :name, {}, {class:"select-box", id:"item-shipping-fee-status"}) %>
+    80:         <div class="weight-bold-text">
+    81:           発送元の地域
+    82:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:79
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-08-13 12:45:56 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2593)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 3483)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fb0c5bdc388>::ShippingFeeStatus):
+    76:           配送料の負担
+    77:           <span class="indispensable">必須</span>
+    78:         </div>
+    79:          <%= f.collection_select(:shipping_charge, ShippingFeeStatus.all, :id, :name, {}, {class:"select-box", id:"item-shipping-fee-status"}) %>
+    80:         <div class="weight-bold-text">
+    81:           発送元の地域
+    82:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:79
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-08-13 12:46:07 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 3021)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 2.1ms | Allocations: 13496)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fb0c5bdc388>::ShippingFeeStatus):
+    76:           配送料の負担
+    77:           <span class="indispensable">必須</span>
+    78:         </div>
+    79:          <%= f.collection_select(:shipping_charge, ShippingFeeStatus.all, :id, :name, {}, {class:"select-box", id:"item-shipping-fee-status"}) %>
+    80:         <div class="weight-bold-text">
+    81:           発送元の地域
+    82:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:79
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-08-13 12:47:20 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 2972)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 2.3ms | Allocations: 13447)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fb0c5bdc388>::ShippingFeeStatus):
+    76:           配送料の負担
+    77:           <span class="indispensable">必須</span>
+    78:         </div>
+    79:          <%= f.collection_select(:shipping_charge, ShippingFeeStatus.all, :id, :name, {}, {class:"select-box", id:"item-shipping-fee-status"}) %>
+    80:         <div class="weight-bold-text">
+    81:           発送元の地域
+    82:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:79
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-08-13 12:48:09 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 7.0ms | Allocations: 2972)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 2.4ms | Allocations: 13447)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fb0c5bdc388>::ShippingFeeStatus):
+    76:           配送料の負担
+    77:           <span class="indispensable">必須</span>
+    78:         </div>
+    79:          <%= f.collection_select(:shipping_charge, ShippingFeeStatus.all, :id, :name, {}, {class:"select-box", id:"item-shipping-fee-status"}) %>
+    80:         <div class="weight-bold-text">
+    81:           発送元の地域
+    82:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:79
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-08-13 12:48:41 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2972)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 2.3ms | Allocations: 13447)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fb0c5bdc388>::ShippingFeeStatus):
+    76:           配送料の負担
+    77:           <span class="indispensable">必須</span>
+    78:         </div>
+    79:          <%= f.collection_select(:shipping_charge, ShippingFeeStatus.all, :id, :name, {}, {class:"select-box", id:"item-shipping-fee-status"}) %>
+    80:         <div class="weight-bold-text">
+    81:           発送元の地域
+    82:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:79
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-08-13 12:56:44 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 7.3ms | Allocations: 2593)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 3483)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fb0c5bdc388>::ShippingFeeStatus):
+    76:           配送料の負担
+    77:           <span class="indispensable">必須</span>
+    78:         </div>
+    79:          <%= f.collection_select(:shipping_charge, ShippingFeeStatus.all, :id, :name, {}, {class:"select-box", id:"item-shipping-fee-status"}) %>
+    80:         <div class="weight-bold-text">
+    81:           発送元の地域
+    82:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:79
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-08-13 13:52:59 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 177)
+  Rendered items/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 3819)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 19.3ms | ActiveRecord: 0.0ms | Allocations: 33177)
+
+
