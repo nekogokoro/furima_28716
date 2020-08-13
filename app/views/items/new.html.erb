@@ -86,7 +86,7 @@
           発送までの日数
           <span class="indispensable">必須</span>
         </div>
-        <%#f.collection_select(:day_until_shipping, Day.all, :id, :name, {prompt: "--"}, {class:"select-box"}) %>
+        <%=f.collection_select(:day_until_shipping, DayUntilShipping.all, :id, :name, {}, {class:"select-box", id:"item-day_until_shipping"}) %>
       </div>
     </div>
     <%# /配送について %>
