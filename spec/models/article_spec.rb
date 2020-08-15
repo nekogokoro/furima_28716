@@ -81,5 +81,35 @@ describe Article do
       @article.valid?
       expect(@article.errors[:day_until_shipping_id]).to include("can't be blank")
     end
+
+    it "category_id1NG" do
+      @article.category_id = 1 
+      @article.valid?
+      expect(@article.errors[:category_id]).to include("must be other than 1")
+    end
+
+    it "status_id1NG" do
+      @article.condition_id = 1 
+      @article.valid?
+      expect(@article.errors[:status_id]).to include("must be other than 1")
+    end
+
+    it "shipping_charge_id1NG" do
+      @article.carriage_id = 1 
+      @article.valid?
+      expect(@article.errors[:shipping_charge_id]).to include("must be other than 1")
+    end
+
+    it "shipping_region_id1NG" do
+      @article.area_id = 1 
+      @article.valid?
+      expect(@article.errors[:shipping_region_id]).to include("must be other than 1")
+    end
+
+    it "day_until_shipping_id1NG" do
+      @article.duration_id = 1 
+      @article.valid?
+      expect(@article.errors[:day_until_shipping_id]).to include("must be other than 1")
+    end
   end
 end
