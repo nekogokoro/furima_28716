@@ -7,22 +7,11 @@ class User < ApplicationRecord
   has_many :items
   has_many :purchases
 
-  with_options presence: true do
-
-  VALID_PASSWORD = /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]{6,100}+\z/i
-  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
-  VALID_NAME = /\A[ぁ-んァ-ン一-龥]/
-  VALID_KANA_NAME = /\A[ァ-ヶー－]+\z/
-
   
-
-    validates :password,      format: { with: VALID_PASSWORD }, confirmation: true
-    salidates :email,         format: { with: VALID_EMAIL_REGEX }, uniqueness: { case_sensitive: false }
-    validates :nick_name, uniqueness: { case_sensitive: true }
-    validates :first_name,     format: { with: VALID_NAME }
-    validates :last_name,      format: { with: VALID_NAME }
-    validates :first_name_kana,    format: { with: VALID_KANA_NAME }
-    validates :last_name_kana,     format: { with: VALID_KANA_NAME }
-    validates :birthday
-  end
+  
+  validates :nick_name, :email, presence: true
+  validates :password, presence: true, format: { with: /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]{6,100}+\z/i, message: 'need 1~9&a~z' }
+  validates :first_name, :last_name, presence: true, format: { with: /\A[ぁ-んァ-ン一-龥]/ }
+  validates :first_name_kana, :last_name_kana, presence: true, format: { with: /[\p{katakana}　ー－&&[^ -~｡-ﾟ]]+/ }
+  validates :birthday, presence: true, format: { without: /\A0/ }
 end
