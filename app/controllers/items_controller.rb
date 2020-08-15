@@ -2,7 +2,9 @@ class ItemsController < ApplicationController
  
 
   def index
-    @articles = Article.all
+    @articles = Article.order(id: "DESC")
+                
+
   end
 
   def new
