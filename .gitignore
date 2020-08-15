@@ -1,0 +1,6 @@
+/log/*
+/tmp/*
+.DS_Store
+!/log/.keep
+!/tmp/.keep
+/storage/*
