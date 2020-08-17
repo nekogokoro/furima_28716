@@ -1,5 +1,5 @@
 class ItemsController < ApplicationController
- 
+  
 
   def index
     @articles = Article.order(id: "DESC")
@@ -19,11 +19,15 @@ class ItemsController < ApplicationController
       render :new
     end
   end
+  def show
+   @article = Article.find(params[:id])
+  end
    
   private
 
   def article_params
     params.require(:article).permit(:image, :title, :text, :price,:category_id,:status_id,:shipping_charge_id,:shipping_region_id, :day_until_shipping_id,).merge(user_id: current_user.id)
   end
+  
 
 end
