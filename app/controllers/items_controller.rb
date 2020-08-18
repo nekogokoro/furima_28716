@@ -27,10 +27,13 @@ class ItemsController < ApplicationController
     end
   end
   def destroy
-    @article.destroy
+   if @article.destroy
     redirect_to root_path
+   else
+    render :edit
   end
-  
+end
+
   private
 
   def article_params
