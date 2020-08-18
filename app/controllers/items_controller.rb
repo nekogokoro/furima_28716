@@ -1,15 +1,9 @@
 class ItemsController < ApplicationController
-
-
-
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update,]
   before_action :set_artcle, only: [:show, :edit, :update,]
-
-  
 
   def index
     @articles = Article.order(id: "DESC")
-                
-
   end
 
   def new
@@ -24,16 +18,15 @@ class ItemsController < ApplicationController
       render :new
     end
   end
+
   def show
+ 
+  end
+
+  def edit 
+  end
   
-  end
-  def edit
-   
-  end
   def update
-    
-    
-    
     if @article.update(article_params)
       redirect_to item_path
     else
