@@ -1,6 +1,6 @@
 class ItemsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create, :edit, :update,]
-  before_action :set_artcle, only: [:show, :edit, :update,]
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update,:destroy,]
+  before_action :set_artcle, only: [:show, :edit, :update,:destroy,]
 
   def index
     @articles = Article.order(id: "DESC")
@@ -26,8 +26,14 @@ class ItemsController < ApplicationController
       render :edit
     end
   end
-   
-   
+  def destroy
+   if @article.destroy
+    redirect_to root_path
+   else
+    render :edit
+  end
+end
+
   private
 
   def article_params
@@ -37,7 +43,4 @@ class ItemsController < ApplicationController
   def set_artcle 
     @article = Article.find(params[:id])
   end
-
-  
-
 end
