@@ -135,12 +135,11 @@
 
           <%# 商品が売れていればsold outの表示 %>
          
-          <% if false  %>
-            <% else%>
-              <div class='sold-out'>
-                <span>Sold Out!!</span>
-              </div>
-            <% end %>
+          <% if article.purchase != nil %>
+            <div class='sold-out'>
+              <span>Sold Out!!</span>
+            </div>
+          <% end %>
         
           <%# //商品が売れていればsold outの表示 %>
 
