@@ -2,8 +2,8 @@ require 'rails_helper'
 describe Article do
   describe '#create' do
     before do
-      @article = build(:item)
-      @article2 = build(:item)
+      @article = build(:article)
+      @article2 = build(:article)
       @article.image = fixture_file_upload('public/images/test_image.png')
     end
 
