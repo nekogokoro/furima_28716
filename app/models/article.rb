@@ -7,8 +7,7 @@ class Article < ApplicationRecord
   belongs_to_active_hash :day_until_shipping
 
   belongs_to :user
-  has_one :order
-  has_one :destination
+  has_one :purchase
   has_one_attached :image
 
   with_options presence: true do

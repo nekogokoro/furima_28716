@@ -52,7 +52,7 @@ describe User do
     end
 
     it 'パスワードは確認用m含め2回記述する事' do
-      @user.password_confirmation: = ''
+      @user.password_confirmation = ''
       @user.valid?
       expect(@user.errors.full_messages).to include("doesn't match Password")
     end
