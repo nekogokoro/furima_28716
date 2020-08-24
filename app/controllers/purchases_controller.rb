@@ -1,6 +1,6 @@
 class PurchasesController < ApplicationController
   before_action :authenticate_user!
-  before_action set_artcle, only:[:index]
+  # before_action set_artcle, only:[:index]
 
   
   def index
@@ -52,9 +52,9 @@ class PurchasesController < ApplicationController
     )
   end
 
-  def set_artcle 
+  # def set_artcle 
     
-    return redirect_to root_path unless @article.purchase.nil?
-  end
+  #   return redirect_to root_path unless @article.purchase.nil?
+  # end
 
 end
