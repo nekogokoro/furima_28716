@@ -1,8 +1,10 @@
 class PurchasesController < ApplicationController
   before_action :authenticate_user!
+  before_action set_artcle, only:[:index]
 
   
   def index
+
     @article = Article.find(params[:item_id])  
     if @article.user.id == current_user.id
       redirect_to root_path
@@ -11,6 +13,7 @@ class PurchasesController < ApplicationController
     end
   end
 
+  
   def create
     @article = Article.find(params[:item_id])  
     @address = ShippingAddress.new(address_params)
@@ -47,6 +50,11 @@ class PurchasesController < ApplicationController
       card: buy_params[:token],
       currency: "jpy"
     )
+  end
+
+  def set_artcle 
+    
+    return redirect_to root_path unless @article.purchase.nil?
   end
 
 end

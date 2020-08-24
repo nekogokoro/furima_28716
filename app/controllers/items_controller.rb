@@ -42,5 +42,6 @@ end
 
   def set_artcle 
     @article = Article.find(params[:id])
+    return redirect_to root_path unless @article.purchase.nil?
   end
 end
